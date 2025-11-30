@@ -1,0 +1,300 @@
+// Buttons
+
+.primaryBtn {
+    max-width: 135px;
+    min-height: 60px;
+    margin: 10px;
+    padding: 16px 32px;
+    border-radius: $borderRadius-primary;
+    font-size: $font-size-sm;
+    color: $fontcolor-third;
+    font-weight: $fontweight-md;
+    background-color: $bgColor-primary;
+    border: 1px solid transparent;
+    @media screen and (max-width: $breakpoint-xxl) {
+        max-width: 130px;
+        min-height: 40px;
+        font-size: 12px;
+        margin: 0px;
+        padding: 5px 20px;
+    }
+}.primaryBtn:hover {
+    border: 1px solid $fontColor-primary;
+    background-color: $bgColor-secondary;
+    color: $fontColor-primary;
+}
+
+.primaryBtn2 {
+    background-color: $bgColor-primary;
+    font-size: $font-size-sm;
+    color: $fontcolor-third;
+    border: 1px solid transparent;
+}.primaryBtn2:hover {
+    border: 1px solid $fontColor-primary;
+    background-color: $bgColor-secondary;
+    color: $fontColor-primary;
+}
+
+
+.secondaryBtn {
+    max-width: 240px;
+    min-height: 68px;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: $borderRadius-primary;
+    font-size: $font-size-sm;
+    color: $fontcolor-third;
+    font-weight: $fontweight-md;
+    background-color: $bgColor-primary;
+    border: 1px solid transparent;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: 200px;
+        min-height: 50px;
+        font-size: 16px;
+        padding : 0px 10px;
+        margin: 10px;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+        max-width: 180px;
+        min-height: 40px;
+        font-size: 14px;
+        padding : 0px 10px;
+        margin: 10px;
+    }
+}.secondaryBtn:hover {
+    border: 1px solid $fontColor-primary;
+    background-color: $bgColor-secondary;
+    color: $fontColor-primary
+}
+
+.thirdBtn {
+    max-width: 140px;
+    min-height: 30px;
+    height: 100%;
+    margin: 10px;
+    padding: 10px 30px;
+    border: 1px solid $fontColor-primary;
+    color: $fontColor-primary;
+    font-weight: $fontweight-md;
+    font-size: 8px;
+    border-radius: $bordeRadius-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: 90px;
+        min-height: 14px;
+        font-size: 4px;
+        padding : 0px 10px;
+    }
+}.thirdBtn:hover {
+    border: 1px solid transparent;
+    background-color: $bgColor-primary;
+    color: $fontcolor-third;
+}
+
+// Headings
+
+h1 {
+    max-width: 595px;
+    min-height: 240px;
+    font-size: $fontsize-xl;
+    font-weight: $fontweight-lg;
+    padding-top: 30px;
+    margin: 20px;
+    color: $fontcolor-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 48px;
+        margin: 10px;
+        min-height: 200px;
+        max-width: 420px;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+        font-size: 48px;
+        max-width: 450px;
+        min-height: 200px;
+    }
+}
+
+h2 {
+    max-width: 595px;
+    width: 100%;
+    min-height: 240px;
+    font-size: $fontsize-xl;
+    font-weight: $fontweight-lg;
+    padding-top: 30px;
+    margin: 20px;
+    color: $fontcolor-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 40px;
+        margin: 10px;
+        min-height: 200px;
+        max-width: 420px;
+        margin-top: 20px;
+        padding:0px;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+        font-size: 48px;
+        max-width: 400px;
+        margin: 15px;
+    }
+}
+
+h3 {
+    max-width: 109px;
+    width: 100%;
+    min-height: 32px;
+    font-size: $fontsize-lg;
+    font-weight: $fontweight-lg;
+    margin: 10px;
+    color: $fontcolor-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: 49px;
+        min-height: 14px;
+        font-size: 16px;
+        margin: 5px;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+
+h4 {
+    max-width: 54px;
+    min-height: 16px;
+    font-size: 12px;
+    font-weight: $fontweight-md;
+    margin: 2px;
+    color: $fontcolor-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: 30px;
+        min-height: 4px;
+        font-size: 8px;
+    }
+
+}
+
+h5 {
+    max-width: 25px;
+    min-height: 32px;
+    font-size: 16px;
+    font-weight: $font-size-md;
+    color:$fontcolor-fourth;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: 4px;
+        min-height: 7px;
+        font-size: 12px;
+    }
+
+}
+
+// Pahragraph
+
+.primaryPahra {
+    font-size: $font-size-md;
+    max-width: 595px;
+    min-height: 72px;
+    color: $fontcolor-secondary;
+    margin: 20px;
+    @media screen and (max-width: $breakpoint-xxl) {
+        font-size: 14px;
+        max-width: 361px;
+        min-height: 50px;
+        margin: 15px;
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 16px;
+        margin: 10px;
+        max-width: 355px;
+    }
+}
+
+.secondaryPahra {
+    font-size: $font-size-sm;
+    max-width: 154px;
+    min-height: 18px;
+    color: $fontcolor-secondary;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: $font-size-sm;
+        max-width: 154px;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+        font-size: 14px;
+        max-width: 361px;
+    }
+}
+
+@mixin registerSection {
+    background-color: $fontColor-primary;
+    color: $fontcolor-third;
+    border-radius: 50px;
+}
+
+@mixin registerBtn {
+    background-color: $fontcolor-third;
+    color: $fontColor-primary;
+    border: 1px solid transparent;
+}
+
+@mixin fullWidth {
+    @media screen and (max-width: $breakpoint-lg) {
+        width: 100%;
+    }
+}
+                    // Header
+
+@mixin headerMenu ($fontColor, $fontSize, $fontWeight) {
+    color: $fontColor;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+                //    Easyplatform
+
+@mixin easyplatBox ($color,$bgColor) {
+    max-width: 220px;
+    min-height: 130px;
+    height: 100%;
+    border-radius: 25px;
+    padding: 18px;
+    margin: 10px;
+    color: $color;
+    background-color: $bgColor;
+    cursor: pointer;
+}
+
+@mixin easyplatBox-h3 ($color) {
+    font-size: $font-size-md;
+    margin: 0px;
+    max-width: 90px;
+    min-height: 25px;
+    word-break: break-all;
+    color: $color;
+}
+
+@mixin easyplatBox-pahra ($color){
+    font-size: 16px;
+    margin: 0px;
+    min-height: 50px;
+    max-width: 170px;
+    color: $color;
+}
+                    // Custmrtrust
+
+@mixin custBox1 ($height,$width) {
+    min-height: $height;
+    max-width: $width;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: $fontcolor-third;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.lg-1 {
+    @media screen and (max-width:768) {
+        
+    }
+}

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sass</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" 
+	integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+	rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+	crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+	  /* padding: 0px 30px; */
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  border-radius: 20px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+	.swiper-button-prev,.swiper-button-next {
+		color: #5BC17F;
+	}
+
+	.swiper-button-prev {
+		left: 0px;
+	}
+
+	.swiper-button-next {
+		right: 0px;
+	}
+
+  </style>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class = "container-fluid header d-flex justify-content-center p-0 ">
+		<div class="headerContainer w-100">
+			<nav class="navbar navbar-expand-lg navbar-light">
+
+				<div class="container-fluid d-flex justify-content-between">
+					<div class="logo"><img src="IMG/Logo.png" alt="It's a logo"></div>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-0 me-0 ms-lg-auto me-lg-auto">
+
+					  <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#rigister">Demos</a>
+					  </li>
+
+					  <li class="nav-item">
+						<a class="nav-link" href="#feature">Features</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#foot">Contact</a>
+					  </li>
+					  <li class="nav-item d-block d-lg-none">
+						<a class="nav-link" href="#">Login</a>
+					  </li>
+					  <li class="nav-item d-block d-lg-none w-100">
+						<div class="d-grid gap-2">
+						  <button class="btn btn-primary primaryBtn2" type="button">Sign up</button>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+
+				  <div class="login d-none d-lg-block me-5">
+					<span class>Login</span>
+					<button class="primaryBtn ms-2" type="submit">Sign up</button>
+				  </div>
+				</div>
+			  </nav>
+		</div>
+	</header>
+
+	<section class = "heroSection d-flex justify-content-center">
+	  <div class="heroContainer w-100 ps-3 pe-3">
+		<div class="row m-0 heroRow">
+			<div class="col-12 col-md-6 heroleftCol">
+				<div class="leftCol">
+				  <h1>Manage Your Business <span>Finance<div class="heroyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> Easily 
+				  </h1>
+				  <p class = "primaryPahra">An enim nullam tempor sapien gravida donec enim ipsum porta justo
+					congue magna at pretium purus pretium ligula
+				  </p>
+				  <button class = "secondaryBtn">Start 14 Days Trial</button>
+				</div>
+			  </div>
+			<div class="col-12 col-md-6 herorightCol d-flex justify-content-center">
+			  <div class="rightImg">
+				<img src="IMG/Group 1000005828.png" alt="HeroImg">
+			  </div>
+			</div>
+		</div>
+		<div class="sideDots"><img src="IMG/dots.png" alt=""></div>
+		<div class="smallDot1"></div>
+		<div class="smallDot2"></div>
+		<div class="smallDot3"></div>
+		<div class="smallDot4"></div>
+		<div class="smallDot5"></div>
+	  </div>
+	</section>
+
+	<section class = "followerSection d-flex justify-content-center">
+	  <div class="followerContainer d-flex justify-content-center align-items-center ps-3 pe-3">
+		<div class="row followerRow m-0 w-100">
+
+		  <div class="col-12 col-md-3 followerCol">
+			<h2>115k+</h2>
+			<p class = "secondaryPahra">Active user</p>
+		  </div>
+		  <hr class = "horizontalLine">
+
+		  <div class="col-12 col-md-3 followerCol">
+			<h2>88k</h2>
+			<p class = "secondaryPahra">User passive</p>
+		  </div>
+		  <hr class = "horizontalLine">
+
+
+		  <div class="col-12 col-md-3 followerCol">
+			<h2>30%</h2>
+			<p class = "secondaryPahra">Increase in User</p>
+		  </div>
+		  <hr class = "horizontalLine">
+
+		  <div class="col-12  col-md-3 followerCol border-0">
+			<h2>>10k</h2>
+			<p class = "secondaryPahra">Good Testimonials</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+	<section class = "featuresSection d-flex justify-content-center" id = "feature">
+	  <div class="featuresContainer w-100 ps-3 pe-3 d-flex justify-content-center">
+		<div class="row featureRow w-100">
+
+		  <div class="col-12 col-md-6 leftfeatureCol">
+            <div class="leftfeatureinnerCol"><img src="IMG/Group 1000005828.png" alt=""></div>
+          </div>
+		  <div class="col-12 col-md-6 rightfeatureCol d-flex flex-column justify-content-center">
+            <div class="rightfeatureCont">
+                <h2>Quick And Easy <span>Payments<div class="featureyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> With Just A Few Clicks
+                </h2>
+                  <p class = "primaryPahra">An enim nullam tempor sapien gravida donec enim ipsum porta justo
+                    congue magna at pretium purus pretium ligula
+                  </p>
+                  <button class = "secondaryBtn">Start 14 Days Trial</button>
+            </div>
+            </div>
+
+          </div>
+		</div>
+
+	  </div>
+
+	</section>
+
+    <section class = "anothrfeatureSection d-flex justify-content-center">
+        <div class="anothrfeatureContainer w-100 ps-3 pe-3 d-flex justify-content-center">
+            <div class="row anothrfeatureRow w-100">
+                <div class="col-12 col-md-6 anthrfeatureleftCol d-flex align-items-center">
+                    <div class="anthrfeaureCont">
+                        <h2>You Can View <span>Transaction <div class="featureyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> History Easily</h2>
+                          <p class = "primaryPahra">An enim nullam tempor sapien gravida donec enim ipsum porta justo
+                            congue magna at pretium purus pretium ligula
+                          </p>
+                          <p class = "primaryPahra anthrfeaturephra">Get Started <i class="ri-arrow-right-s-line"></i><i class="ri-arrow-right-s-line"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 anthrfeaturerightCol d-flex flex-column align-items-center justify-content-center">
+					<div class="firstImg"><img src="IMG/featureImg.png" alt=""></div>
+					<div class="secondImg"><img src="IMG/Kit.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+	<section class = "exclentfeature d-flex justify-content-center">
+		<div class="exclentfeatureContainer ps-3 pe-3 w-100">
+			<div class="exclentRow">
+				<div class="col-12 topCol d-flex flex-column align-items-center ">
+					<h2>Some Excellent <span>Features <div class="exceyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> For You</h2>
+					<p class = "primaryPahra">An enim nullam tempor sapien gravida donec enim ipsum porta justo
+						congue magna at pretium purus pretium ligula
+					  </p>
+				</div>
+				
+				<div class="col-12 bottomCol">
+					<div class="row bottominnerRow">
+                          						  <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                          
+                                <div class="swiper-slide">
+                          		<div class="bottominnerCont">
+                          			<span><i class="ri-arrow-up-fill"></i><i class="ri-arrow-down-fill"></i></span>
+                          			<h3>Bill Payment</h3>
+                          			<p class="primaryPahra">Make bill payments easily using the wallet app</p>
+                          		</div>
+                          	  </div>
+                          
+                                <div class="swiper-slide">
+                          		<div class="bottominnerCont">
+                          			<span><i class="ri-wallet-3-fill"></i></span>
+                          			<h3>Withdraw Money</h3>
+                          			<p class="primaryPahra">Withdraw money easily using the wallet app</p>
+                          		</div>
+                          	  </div>
+                          
+                                <div class="swiper-slide">
+                          		<div class="bottominnerCont">
+                          			<span><i class="ri-file-add-fill"></i></span>
+                          			<h3>Add card</h3>
+                          			<p class="primaryPahra">Can save card in your wallet app</p>
+                          		</div>
+                          	  </div>
+                          
+                                <div class="swiper-slide">
+                          		<div class="bottominnerCont">
+                          			<span><i class="ri-file-history-fill"></i></span>
+                          			<h3>History</h3>
+                          			<p class="primaryPahra">All transaction will be reported in the menu</p>
+                          		</div>
+                          	  </div>
+                          
+                                <div class="swiper-slide">
+                          		<div class="bottominnerCont">
+                          			<span><i class="ri-arrow-up-fill"></i><i class="ri-arrow-down-fill"></i></span>
+                          			<h3>Bill Payment</h3>
+                          			<p class="primaryPahra">Make bill payments easily using the wallet app</p>
+                          		</div>
+                          	  </div>
+                          
+                              </div>
+                              <div class="swiper-pagination"></div>
+
+							  <div class="swiper-button-prev"></div>
+							  <div class="swiper-button-next"></div>
+
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class = "featuresSection d-flex justify-content-center easyplatformSection">
+		<div class="featuresContainer w-100 ps-3 pe-3 d-flex justify-content-center easyplatformContainer">
+		  <div class="row featureRow w-100 easyplatformRow">
+  
+			<div class="col-12 col-md-6 leftfeatureCol lefteasyplatCol">
+			  <div class="leftfeatureinnerCol lefteasyinnerCol"><img src="IMG/Group 1000005828.png" alt=""></div>
+			</div>
+			<div class="col-12 col-md-6 rightfeatureCol d-flex flex-column justify-content-center righteasyplatCol" >
+			  <div class="rightfeatureCont righteasyplatCont">
+				  <h2>Platform To Make it <span>Easier<div class="heroyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> For Users
+					  
+				  </h2>
+					<p class = "primaryPahra">Vero homero perfecto mel ut, sonet aperiam an nec. 
+						Ni nec dict altera legimu. Me vita de lege ndos expet end is ad, Ex mel omita allu mi ando, haeo tibi wue com titune viset cut.
+					</p>
+					<div class="mainBox">
+						<div class="easyBox">
+							<h3>Checkout</h3>
+							<p class = "primaryPahra">Accepts payments by sharing the link</p>
+							<span><i class="ri-arrow-right-line"></i></span>
+						</div>
+						<div class="easyBox active">
+							<h3>Checkout</h3>
+							<p class = "primaryPahra">Accepts payments by sharing the link</p>
+							<span><i class="ri-arrow-right-line"></i></span>
+						</div>
+					</div>
+
+			  </div>
+			  </div>
+  
+			</div>
+		  </div>
+  
+		</div>
+  
+	</section>
+
+	<section class = "aboutusSection d-flex justify-content-center" id = "pricing">
+		<div class="aboutusContainer">
+			<div class="row aboutusRow">
+				<div class="col-12 aboutusCol1 d-flex flex-column align-items-center">
+					<h2>What Our Happy <span>Users <div class="heroyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> Say</h2>
+					<p class = "primaryPahra">Read real experience of our user</p>
+				</div>
+				<div class="col-12 aboutusCol2">
+					<div class="aboutusImg">
+						<img src="IMG/aboutus.png" alt="">
+					</div>
+					<div class="aboutusImg2">
+						<img src="IMG/aboutus2.jpeg" alt="">
+					</div>
+				</div>
+
+				
+
+				<div class="col-12 aboutusCol3">
+
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"  aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+
+						  <div class="carousel-item active">
+							<div class="aboucolCont m-auto">
+								<p class = "primaryPahra">Leading an organization is 
+									inceadible rewarding and equality humbling, Confidence and humanity. 
+									Every success is built on lessons from mistakes made is increadibly 
+									rewarding and equality humbling, it requires healthy.
+								</p>
+								<h3>Mila McSabbu</h3>
+								<p class = "primaryPahra aboutusPahra">Designer</p>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="aboucolCont m-auto">
+								<p class = "primaryPahra">Leading an organization is 
+									inceadible rewarding and equality humbling, Confidence and humanity. 
+									Every success is built on lessons from mistakes made is increadibly 
+									rewarding and equality humbling, it requires healthy.
+								</p>
+								<h3>Mila McSabbu</h3>
+								<p class = "primaryPahra aboutusPahra">Designer</p>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="aboucolCont m-auto">
+								<p class = "primaryPahra">Leading an organization is 
+									inceadible rewarding and equality humbling, Confidence and humanity. 
+									Every success is built on lessons from mistakes made is increadibly 
+									rewarding and equality humbling, it requires healthy.
+								</p>
+								<h3>Mila McSabbu</h3>
+								<p class = "primaryPahra aboutusPahra">Designer</p>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="aboucolCont m-auto">
+								<p class = "primaryPahra">Leading an organization is 
+									inceadible rewarding and equality humbling, Confidence and humanity. 
+									Every success is built on lessons from mistakes made is increadibly 
+									rewarding and equality humbling, it requires healthy.
+								</p>
+								<h3>Mila McSabbu</h3>
+								<p class = "primaryPahra aboutusPahra">Designer</p>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="aboucolCont m-auto">
+								<p class = "primaryPahra">Leading an organization is 
+									inceadible rewarding and equality humbling, Confidence and humanity. 
+									Every success is built on lessons from mistakes made is increadibly 
+									rewarding and equality humbling, it requires healthy.
+								</p>
+								<h3>Mila McSabbu</h3>
+								<p class = "primaryPahra aboutusPahra">Designer</p>
+							</div>
+						  </div>
+
+						</div>
+						<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button> -->
+					  </div>
+
+
+
+
+
+					<!-- <div class="aboucolCont m-auto">
+						<p class = "primaryPahra">Leading an organization is 
+							inceadible rewarding and equality humbling, Confidence and humanity. 
+							Every success is built on lessons from mistakes made is increadibly 
+							rewarding and equality humbling, it requires healthy.
+						</p>
+						<h3>Mila McSabbu</h3>
+						<p class = "primaryPahra aboutusPahra">Designer</p>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class = "trustSection d-flex justify-content-center">
+		<div class="anothrfeatureContainer w-100 ps-3 pe-3 d-flex justify-content-center trustContainer">
+            <div class="row anothrfeatureRow w-100 trustRow">
+                <div class="col-12 col-md-6 anthrfeatureleftCol d-flex align-items-center trustleftCol">
+                    <div class="anthrfeaureCont trustCont">
+                        <h2>See Our <span>Trusted <div class="featureyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span> Partners</h2>
+                          <p class = "primaryPahra">Vero homero perfecto mei ut, sonet aperiam an noc, Ni nec dict legium.
+							Me vita de lege ndoes expet end is ad. Ex mei omita alliu mi ando
+                          </p>
+                          <p class = "primaryPahra anthrfeaturephra">Get Started <i class="ri-arrow-right-s-line"></i><i class="ri-arrow-right-s-line"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 anthrfeaturerightCol d-flex flex-column align-items-center justify-content-center trustrightCol">
+					<div class="firstImg"><img src="IMG/featureImg.png" alt=""></div>
+					<div class="secondImg"><img src="IMG/Kit.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<section class = "custmrtrustSection d-flex justify-content-center">
+		<div class="custmrtrustContainer">
+			<div class="row custRow">
+				<div class="col-12 custCol">
+					<h2>Keep Your Customer <span>Trust <div class="featureyellwCircle"><img src="IMG/Vector.png" alt="Yellow Circle"></div></span></h2>
+					<p class = " primaryPahra">Vero homero perfecto mei ut, sonet aperiam an nec. 
+						Ni nec dict altera legium. Me vita de lege ndos expet end is ad. 
+						Ex mei omita aliu mi ando, haeo tibi que com titure viset cut.</p>
+				</div>
+
+				<div class="col-12 custCol2" >
+					<div class="custmainBox">
+						<div class="custBox1">
+							<div class="topBox1 d-flex">
+								<div class="Box1icon"><i class="ri-money-dollar-circle-fill"></i></div>
+								<div class="box1Header">
+									<h3>Multiple Payment Method</h3>
+									<p class = "primaryPahra">Set up your payment method with PayUp.
+										The linking of commercial networks and enterprises
+									</p>
+								</div>
+							</div>
+							<hr class = "box1hr">
+							<div class="BottomBox1">
+								<div class="row bottomRow">
+									<div class="col-6 bottomCol"><img src="IMG/comp3.png" alt=""></div>
+									<div class="col-6 bottomCol"><img src="IMG/comp3.png" alt=""></div>
+									<div class="col-6 bottomCol"><img src="IMG/comp3.png" alt=""></div>
+									<div class="col-6 bottomCol"><img src="IMG/comp3.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="custBox1 custBox2">
+							<div class="topBox1 topBox2 d-flex align-items-center">
+								<div class="Box1icon Box2icon d-flex justify-content-center align-items-center"><i class="ri-lock-2-fill"></i></div>
+								<div class="box1Header box2Header">
+									<h3>Payment Protection</h3>
+									<p class = "primaryPahra">Set up your payment method with PayUp.
+										The linking of commercial networks and enterprises
+									</p>
+								</div>
+							</div>
+							<hr class = "box1hr box2hr">
+							
+							<div class="bottomBox2 d-flex flex-row justify-content-between align-items-center flex-wrap">
+								<div class="bottominnerBox1">
+									<div class="Box2innericon"><i class="ri-bug-2-line"></i></div>
+									<p class="primaryPahra">Set up your payment method with PayUp. The linking of commercial</p>
+								</div>
+
+								<div class="bottominnerBox1">
+									<div class="Box2innericon"><i class="ri-barcode-fill"></i></div>
+									<p class="primaryPahra">Set up your payment method with PayUp. The linking of commercial</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class = "registerSection d-flex justify-content-center" id = "rigister">
+		<div class="registerContainer d-flex align-items-center justify-content-center">
+			<div class="registerCont">
+				<div class="registerinnerCont">
+					<h2>Why You Are Waiting For, Let's Register Now</h2>
+					<p class = "primaryPahra">Vero homero perfecto mei ut, sonet aperiam an nec.
+						Ni nec dict altera legimu. Me vita de lege ndos expet end is ad.
+					</p>
+					<button class = "secondaryBtn">Register Now</button>
+					<div class="registerImg">
+						<img src="IMG/Mobile Screen 1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class = "container-fluid footerSection d-flex justify-content-center p-0" id = "foot">
+		<div class="footerContainer w-100">
+			<div class="row m-0 footerRow">
+
+				<div class="col-12 footerCol1">
+					<div class="row footinnerRow m-0">
+						<div class="col-12 col-md-6 footinnerCol1"><div class="logo"><img src="IMG/Logo.png" alt="It's a logo"></div>
+					</div>
+						<div class="col-12 col-md-6 footinnerCol2">
+							<span><i class="ri-instagram-line"></i></span>
+							<span><i class="ri-linkedin-fill"></i></span>
+							<span><i class="ri-facebook-fill"></i></span>
+							<span class = "twitter"><i class="ri-twitter-fill"></i></span>
+						</div>
+					</div>
+				</div>
+				<hr class = "footHorizontal">
+
+				<div class="col-12 footerCol2">
+
+					<div class="row m-0 footinnerRow2">
+						<div class="col-12 col-md-4 footRow2col1">
+							<h3>Subscribe to our newsletter</h3>
+
+							<div class="form-floating mb-3 footerEmail d-flex">
+								<input type="email" class="form-control footemailInput" id="floatingInput" placeholder="name@example.com" >
+								<label for="floatingInput floatlabel">Email address</label>
+								<div class = "emailicon"><i class="ri-arrow-right-line"></i></div>
+							  </div>
+
+						</div>
+						<div class="col-12 col-md-8 footRow2col2">
+							<div class="row m-0 footulRow">
+								<div class="col-12 col-md-4 footulCol">
+									<ul>
+										<li><h3>Services</h3></li>
+										<li class = "mt-4 ">Email Marketing</li>
+										<li class = "mt-4 ">Campings</li>
+										<li class = "mt-4 ">Branding</li>
+										<li class = "mt-4 ">Offline</li>
+									</ul>
+								</div>
+								<div class="col-12 col-md-4 footulCol">
+									<ul>
+										<li><h3>About</h3></li>
+										<li class = "mt-4 ">Our Story</li>
+										<li class = "mt-4 ">Benifits</li>
+										<li class = "mt-4 ">Team</li>
+										<li class = "mt-4 ">Careers</li>
+									</ul>
+								</div>
+								<div class="col-12 col-md-4 footulCol">
+									<ul>
+										<li><h3>Help</h3></li>
+										<li class = "mt-4 ">FAQ</li>
+										<li class = "mt-4 ">Contact us</li>
+										<li class = "mt-4 ">Team</li>
+										<li class = "mt-4 ">Careers</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 footerCol3">
+					<div class="row m-0 footRow3">
+
+						<div class="col-12 col-md-6 footRow3Col1">
+							<span>Terms & condition</span>
+							<span class = "ms-md-4">Privacy policy</span>
+						</div>
+
+						<div class="col-12 col-md-6 footRow3Col2">
+							<span>All Right Reserved @ western.com</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+	crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+	  autoplay:true,
+	  loop: true,
+	  breakpoints: {
+		993: {
+			slidesPerView: 4,
+		},
+		769: {
+			slidesPerView: 3,
+		},
+		577: {
+			slidesPerView: 2,
+		},
+		0: {
+			slidesPerView: 1,
+		}
+	  },
+	    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    });
+  </script>
+</body>
+</html>

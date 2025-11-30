@@ -1,0 +1,184 @@
+.heroSection {
+    .heroContainer {
+        max-width: 1920px;
+        min-height: 720px;
+        box-sizing: border-box;
+        position: relative;
+        background: radial-gradient(ellipse, rgb(185, 213, 223), white,rgb(251, 248, 241),rgb(225, 243, 251));
+        @media screen and (max-width: $breakpoint-xxl) {
+            min-height: 600px;
+        }
+
+        .heroRow {
+            .heroleftCol {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                @media screen and (max-width: $breakpoint-md) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0px;
+                    width: 100%;
+                }
+                .leftCol {
+                    padding-left: 10px;
+                    @media screen and (max-width: $breakpoint-md) {
+                        padding: 0px;
+                    }
+                    h1 {
+                        span {
+                            position: relative;
+                            color: $fontColor-primary;
+                            z-index: 1;
+                        }
+                        .heroyellwCircle {
+                            width: 260px;
+                            height: 90px;
+                            z-index: -1;
+                            position: absolute;
+                            top: -3%;
+                            left: -9%;
+                            @media screen and (max-width: $breakpoint-xxl) {
+                                width: 210px;
+                                height: 70px;
+                            }
+                            @media screen and (max-width: $breakpoint-md) {
+                                width: 220px;
+                                height: 70px;
+                            }
+                            @media screen and (max-width: $breakpoint-sm) {
+                                height: 65px;
+                                width: 210px;
+                            }
+                        } .heroyellwCircle img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .primaryPahra {
+                        @media screen and (max-width: $breakpoint-xxl) {
+                            max-width: 400px;
+                        }
+                        @media screen and (max-width: $breakpoint-md) {
+                            font-size: 16px;
+                            margin: 10px;
+                            max-width: 355px;
+                        }
+                    }
+                }
+            }
+            .herorightCol {
+                min-height:720px;
+                @media screen and (max-width: $breakpoint-xxl) {
+                    min-height: 600px;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    min-height: 200px;
+                    width: 100%;
+                }
+                .rightImg {
+                    min-height: 720px;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        min-height: 600px;
+                        max-width: 700px;
+                    }
+                    @media screen and (max-width: $breakpoint-md) {
+                        max-width: 450px;
+                        min-height: 200px;
+                    }
+                } .rightImg img {
+                    width: 100%;
+                }
+            }
+        }
+        .sideDots {
+            position: absolute;
+            height: 140px;
+            left: -10px;
+            top: 0px;
+            @media screen and (max-width: $breakpoint-xxl) {
+                left: -12px;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        } .sideDots img {
+            width: 100%;
+            height: 100%;
+        }
+        .smallDot1 {
+            position: absolute;
+            bottom: 35%;
+            left: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: red;
+            @media screen and (max-width: $breakpoint-xxl) {
+                bottom: 35%;
+                left: 3%;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+        .smallDot2 {
+            position: absolute;
+            top: 22%;
+            left: 3%;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: blue;
+            @media screen and (max-width: $breakpoint-xxl) {
+                left: 13%;
+                top: 28%;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+        .smallDot3 {
+            position: absolute;
+            right: 55%;
+            top: 40%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: red;
+            @media screen and (max-width: $breakpoint-xxl) {
+                top: 45%;
+                right: 53%;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+        .smallDot4 {
+            position: absolute;
+            bottom: 30%;
+            left: 40%;
+            width: 5px;
+            height: 5px;
+            background-color: green;
+            border-radius: 50%;
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+        .smallDot5 {
+            position: absolute;
+            top: 12.7%;
+            right: 37%;
+            width: 9px;
+            height: 9px;
+            background-color: green;
+            border-radius: 50%;
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+    }
+    
+    
+}

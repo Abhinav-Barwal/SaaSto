@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+    .header {
+        .headerContainer {
+            max-width: 1250px;
+            @media screen and (max-width: $breakpoint-xxl) {
+                max-width: 930px;
+            }
+            .navbar {
+                .logo {
+                    max-width: 179px;
+                    min-height: 40px;
+                } .logo img {
+                    width: 100%;
+                    height: 100%;
+                }
+                @media screen and (max-width: $breakpoint-xxl) {
+                    .logo {
+                        max-width: 130px;
+                        min-height: 30px;
+                    }
+                }
+                .navbar-nav {
+                    max-width: 450px;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        max-width: 370px
+                    }
+                    @media screen and (max-width: 767px) {
+                        max-width: 100%;
+                    }
+                    .nav-item {
+                        font-size: $font-size-sm;
+                        padding: 0px 20px;
+                        .nav-link {
+                            @include headerMenu ($fontcolor-secondary, 18px, 400);
+                            @media screen and (max-width: $breakpoint-xxl) {
+                                font-size: 12px;
+                            }
+                        }
+                        .nav-link:hover {
+                            color: $fontColor-primary;
+                        }
+                    }
+                }
+                .login {
+                    color: $fontColor-primary;
+                    font-weight: $fontweight-md;
+                    cursor: pointer;
+                    @media screen and (max-width: $breakpoint-xxl) { /*---*/
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

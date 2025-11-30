@@ -1,0 +1,99 @@
+.anothrfeatureContainer {
+    max-width: 1920px;
+    min-height: 568px;
+    box-sizing: border-box;
+    background: radial-gradient(ellipse, rgb(185, 213, 223), white,rgb(251, 248, 241),rgb(225, 243, 251));
+    .anothrfeatureRow {
+        max-width: 1250px;
+        min-height: 400px;
+        height: 100%;
+        order: 1;
+        @media screen and (max-width: $breakpoint-xxl) {
+            max-width: 950px;
+        }
+        .anthrfeatureleftCol { 
+            @media screen and (max-width: $breakpoint-md) {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                order: 2;
+            }
+            .anthrfeaureCont {
+                h2 {
+                    max-width: 450px;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        max-width: 400px;
+                        min-height: 200px;
+                    }
+                    span {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .featureyellwCircle {
+                        width: 370px;
+                        height: 90px;
+                        position: absolute;
+                        top: -2%;
+                        left: -9%;
+                        z-index: -1;
+                        @media screen and (max-width: $breakpoint-xxl) {
+                            width: 280px;
+                            height: 68px;
+                        }
+                        @media screen and (max-width: $breakpoint-md) {
+                            top: -4%;
+                            width: 280px;
+                            height: 70px;
+                        }
+                    }.featureyellwCircle img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .primaryPahra {
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        max-width: 550px;
+                        min-height: 35px;
+                    }
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: 16px;
+                        margin: 10px;
+                        max-width: 355px;
+                    }
+                }
+
+                .anthrfeaturephra {
+                    color: $fontColor-primary;
+                    cursor: pointer;
+                }
+            }
+        }
+        .anthrfeaturerightCol {
+            min-height: 520px;
+            order: 2;
+            @media screen and (max-width: $breakpoint-md) {
+                min-height: 520px;
+                width: 100%;
+                order: 1;
+            }
+            .firstImg {
+                padding: 20px 0px;
+                @media screen and (max-width: $breakpoint-md) {
+                    max-width: 200px;
+                }
+            }.firstImg img {
+                width: 100%;
+                height: 100%;
+            }
+            .secondImg {
+                max-width: 300px;
+                @media screen and (max-width: $breakpoint-md) {
+                    max-width: 300px;
+                }
+            }.secondImg img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

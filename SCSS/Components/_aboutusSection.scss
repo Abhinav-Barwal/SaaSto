@@ -1,0 +1,156 @@
+.aboutusContainer {
+    max-width: 1920px;
+    box-sizing: border-box;
+    width: 100%;
+    background: radial-gradient(ellipse, rgb(185, 213, 223), white,rgb(251, 248, 241),rgb(225, 243, 251));
+
+    .aboutusRow {
+        margin: 0px;
+        padding: 20px;
+        .aboutusCol1 {
+            h2 {
+                max-width: 499px;
+                text-align: center;
+                min-height: 150px;
+                padding-top: 0px;
+                @media screen and (max-width: $breakpoint-xxl) {
+                    min-height: 120px;
+                }
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    min-height: 120px;
+                    margin: 10px;
+                }
+                .heroyellwCircle {
+                    width: 200px;
+                    height: 90px;
+                    z-index: -1;
+                    position: absolute;
+                    top: -3%;
+                    left: -14%;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        width: 150px;
+                        height: 60px;
+                    }
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 150px;
+                        height: 70px;
+                    }
+                } .heroyellwCircle img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .primaryPahra {
+                min-height: 60px;
+                @media screen and (max-width: $breakpoint-xxl) {
+                    min-height:30px;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    min-height: 30px;
+                }
+            }
+        }
+        .aboutusCol2 {
+            .aboutusImg {
+                max-width: 800px;
+                min-height: 300px;
+                margin: auto;
+                @media screen and (max-width: $breakpoint-xxl) {
+                    max-width: 750px;
+                    min-height: 250px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    display: none;
+                }
+            } .aboutusImg img {
+                width: 100%;
+                height: 100%;
+            }
+            .aboutusImg2 {
+                max-width: 110px;
+                min-height: 110px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: auto;
+                display: none;
+                @media screen and (max-width: $breakpoint-md) {
+                    display: block;
+                }
+            }.aboutusImg2 img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .aboutusCol3 {
+            padding: 20px 20px 0px 20px;
+            .carousel {
+                min-height: 330px;
+                @media screen and (max-width: $breakpoint-xxl) {
+                    min-height:270px;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    min-height: 300px;
+                }
+                .carousel-indicators {
+                    button {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: $fontColor-primary;
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .aboucolCont {
+                            max-width:950px;
+                            display: flex;
+                            align-items: center;
+                            border-left: 1px solid grey;
+                            border-right: 1px solid grey;
+                            flex-direction: column;
+                            @media screen and (max-width: $breakpoint-xxl) {
+                                max-width: 850px;
+                            }
+                            @media screen and (max-width: $breakpoint-md) {
+                                max-width: 530px;
+                                min-height: 330px;
+
+                            }
+                            .primaryPahra {
+                                max-width: 800px;
+                                text-align: center;
+                                @media screen and (max-width: $breakpoint-xxl) {
+                                    max-width: 550px;
+                                }
+                                @media screen and (max-width: $breakpoint-md) {
+                                    max-width: 325px;
+                                }
+                            }
+                            h3 {
+                                max-width: 210px;
+                                width: 100%;
+                                text-align: center;
+                                @media screen and (max-width: $breakpoint-md) {
+                                    max-width: 200px;
+                                }
+                            }
+                            .aboutusPahra {
+                                margin: 5px;
+                                min-height: 30px;
+                                @media screen and (max-width: $breakpoint-md) {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

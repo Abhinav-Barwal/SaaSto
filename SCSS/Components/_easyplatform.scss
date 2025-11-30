@@ -1,0 +1,94 @@
+.easyplatformSection {
+    .easyplatformContainer {
+        .easyplatformRow {
+            .righteasyplatCol {
+                .righteasyplatCont {
+                    h2 {
+                        max-width:700px;
+                        min-height: 150px;
+                        margin: 0px;
+                        span {
+                            position: relative;
+                        }
+                        @media screen and (max-width: $breakpoint-md) {
+                            max-width: 500px;
+                        }
+                        .heroyellwCircle {
+                            width: 200px;
+                            height: 70px;
+                            z-index: -1;
+                            position: absolute;
+                            top: -3%;
+                            left: -9%;
+                            @media screen and (max-width: $breakpoint-xxl) {
+                                width: 150px;
+                                height: 60px;
+                            }
+                            @media screen and (max-width: $breakpoint-md) {
+                                max-width: 150px;
+                                height: 60px;
+                            }
+                            @media screen and (max-width: $breakpoint-sm) {
+                                height: 65px;
+                                width: 210px;
+                            }
+                        } .heroyellwCircle img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .primaryPahra {
+                        max-width: 600px;
+                        margin: 15px 0px;
+                        @media screen and (max-width: $breakpoint-md) {
+                            font-size: 16px;
+                            margin: 10px;
+                            max-width: 330px;
+                        }
+                    }
+                    .mainBox {
+                        display: flex;
+                        @media screen and (max-width: $breakpoint-md) {
+                            flex-direction: column;
+                        }
+                        .easyBox {
+                            // @include easyplatBox ($fontcolor-third, $fontColor-primary);
+                            @include easyplatBox (#000, $fontcolor-third);
+
+                            h3 {
+                                @include easyplatBox-h3 (#000);
+                            }
+                            .primaryPahra {
+                                @include easyplatBox-pahra (#000)
+                            }
+                            span {
+                                font-size: $font-size-md;
+                            }
+                        }
+                        .easyBox:hover {
+                            @include easyplatBox ($fontcolor-third, $fontColor-primary);
+                            h3 {
+                                @include easyplatBox-h3 ($fontcolor-third);
+                            }
+                            .primaryPahra {
+                                @include easyplatBox-pahra ($fontcolor-third);
+                            }
+                        }
+                        // .easyBox2 {
+                        //     h3 {
+                        //         @include easyplatBox-h3 (#000);
+                        //     }
+                        //     .primaryPahra {
+                        //         @include easyplatBox-pahra (#000);
+                        //     }
+                        //     span {
+                        //         font-size: $font-size-md;
+                        //     }
+                        // }
+                    }
+
+                }
+            }
+        }
+    }
+}

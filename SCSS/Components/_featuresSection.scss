@@ -1,0 +1,86 @@
+.featuresContainer {
+    max-width: 1920px;
+    min-height: 568px;
+    box-sizing: border-box;
+    background: radial-gradient(ellipse, rgb(185, 213, 223), white,rgb(251, 248, 241),rgb(225, 243, 251));
+    @media screen and (max-width: $breakpoint-xxl) {
+        min-height: 500px;
+    }
+
+    .featureRow {
+        max-width: 1250px;
+        min-height: 400px;
+        @media screen and (max-width: $breakpoint-xxl) {
+            max-width: 930px;
+        }
+        .leftfeatureCol {
+            @media screen and (max-width: $breakpoint-md) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:100%;
+            }
+            .leftfeatureinnerCol {
+                min-height: 400px;
+                @media screen and (max-width: $breakpoint-md) {
+                    max-width: 450px;
+                    min-height: 200px;
+                }
+            }.leftfeatureinnerCol img {
+                min-height: 100%;
+                max-width: 100%;
+            }
+        }
+        .rightfeatureCol {
+            @media screen and (max-width: $breakpoint-md) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .rightfeatureCont {
+                h2 {
+                    min-height: 200px;
+                    max-width: 520px;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        max-width: 400px;
+                    }
+                    span {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .featureyellwCircle {
+                        width: 320px;
+                        height: 95px;
+                        position: absolute;
+                        z-index:-1;
+                        top: 0%;
+                        left: -10%;
+                        @media screen and (max-width: $breakpoint-xxl) {
+                            width: 240px;
+                            height: 70px;
+                        }
+                        @media screen and (max-width: $breakpoint-md) {
+                            width: 245px;
+                            height: 70px;
+                        }
+                    }.featureyellwCircle img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .primaryPahra {
+                    max-width: 595px;
+                    @media screen and (max-width: $breakpoint-xxl) {
+                        max-width: 500px;
+                    }
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: 16px;
+                        margin: 10px;
+                        max-width: 355px;
+                    }
+                }
+            }
+        }
+    }
+}
